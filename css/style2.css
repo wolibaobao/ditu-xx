@@ -274,8 +274,11 @@ a:hover {
     width: 8px;
     height: 8px;
     margin: 0 auto;
-    background-color: #01B7BD;
+    background-color: #20B09F;
     border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #20B09F;
+    animation: dot2 2s infinite;
 }
 
 .map-dot.beijing:after {
@@ -283,13 +286,14 @@ a:hover {
     height: 12px;
     border-radius: 0;
     background: url("../images/icon-star.png") no-repeat center;
+    border: none;
 }
 
 .branch-map-data {
     position: absolute;
     box-sizing: border-box;
     width: 430px;
-    border: 1px solid #01B7BD;
+    border: 1px solid #F44336;
     box-shadow: 0 0 2px 2px #e9e9e9;
     background-color: #fff;
     padding: 10px 30px;
@@ -395,4 +399,16 @@ a, button, input, textarea {
         transform: translateX(-50%) scale(1.5);
         opacity: .1;
     }
+}
+@keyframes dot2 {
+	100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(0.5);
+        opacity: .5;
+    }
+    
 }
